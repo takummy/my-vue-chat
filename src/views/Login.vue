@@ -4,7 +4,7 @@
                  lead="Chatkit SDKとBootstrap-Vueで作ってます。"
                  bg-variant="info"
                  text-variant="white">
-      <p>For more information visit website</p>
+      <p>↓ソースコードはこちらです</p>
       <b-btn target="_blank" href="https://github.com/takummy/my-vue-chat">GitHub</b-btn>
     </b-jumbotron>
     <b-container>

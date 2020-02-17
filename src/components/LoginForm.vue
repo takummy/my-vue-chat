@@ -6,7 +6,7 @@
       <b-alert variant="danger" :show="hasError">{{ error }}</b-alert>
 
       <b-form-group id="userInputGroup"
-                    label="User Name"
+                    label="ユーザー名"
                     label-for="userInput">
         <b-form-input id="userInput"
                       type="text"
