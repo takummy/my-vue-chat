@@ -1,24 +1,15 @@
-# my-vue-chat
+# 概要
+Vue.jsの理解を深める為に簡単なチャットアプリを作ってみる。
 
-## Project setup
-```
-npm install
-```
+# 使用したもの
+- Vue 2.6.11
+- Vue CLI 4.1.2
+- Vuex
+- Vue Router
+- Pusher
+- Bootstrap Vue
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 開発を通して身につけること
+1. Vue Routerの使いかた
+2. Stateの管理
+3. Vueの設計思想を理解する
