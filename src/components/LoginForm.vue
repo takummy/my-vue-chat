@@ -50,7 +50,7 @@ export default {
     ]),
     ...mapGetters([
       'hasError'
-    ])  
+    ])
   }
 }
 </script>
