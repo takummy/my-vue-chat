@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { masState, mapGetters } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 
 export default {
   name: 'login-form',
