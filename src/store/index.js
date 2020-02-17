@@ -13,10 +13,14 @@ const vuexLocal = new VuexPersistence({
 
 export default new Vuex.Store({
   state: {
+    loading: false,
+    error: null,
+    user: []
   },
   mutations,
   actions,
   getters: {
+    hasError: state => state.error ? true : false
   },
   plugins: [vuexLocal.plugin],
   strict: debug
