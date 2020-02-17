@@ -28,7 +28,7 @@ export default {
     ...mapState([
       'messages'
     ])
-  }  
+  }
 }
 </script>
 
