@@ -3,9 +3,9 @@
     <h4>チャンネル</h4>
     <hr>
     <b-list-group v-if="activeRoom">
-      <b-list-group-item v-for:="room in rooms"
+      <b-list-group-item v-for="room in rooms"
                          :key="room.name"
-                         :active="activeRoom.id == room.id"
+                         :active="activeRoom.id === room.id"
                          href="#"
                          @click="onChange(room)">
         # {{ room.name }}
