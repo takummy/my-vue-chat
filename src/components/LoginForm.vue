@@ -21,7 +21,7 @@
                 type="submit"
                 variant="primary"
                 v-bind:class="{ running: loading }"
-                disabled="isValid">
+                :disabled="isValid">
         Login <div class="ld ld-ring ld-spin"></div>
 
       </b-button>
