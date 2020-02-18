@@ -12,12 +12,12 @@
                     autocomplete="off"
                     required>
       </b-form-input>
-      <div class="clearfix">
-        <b-button type="submit" variant="primary" class="float-right">
-          送信
-        </b-button>
-      </div>
     </b-form-group>
+    <div class="clearfix">
+      <b-button type="submit" variant="primary" class="float-right">
+        送信
+      </b-button>
+    </div>
   </div>
 </template>
 
