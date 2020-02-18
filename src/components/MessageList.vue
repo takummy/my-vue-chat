@@ -3,7 +3,7 @@
     <h4>メッセージ</h4>
     <hr>
     <div id="chat-messages" class="message-group" v-chat-scroll="{smooth: true}">
-      <div class="message" v-for="(message, index in messages)" :key="index">
+      <div class="message" v-for="(message, index) in messages" :key="index">
         <div class="clearfix">
           <h4 class="message-title">{{ message.name }}</h4>
           <small class="text-muted float-right">@{{ message.username }}</small>
