@@ -1,7 +1,7 @@
 import chatkit from '../chatkit';
 
 function handleError(commit, error) {
-  const message = error.message || error.info.error_discription;
+  const message = error.message || error.info.error_description;
   commit('setError', message);
 }
 
@@ -16,11 +16,24 @@ export default {
         username: currentUser.id,
         name: currentUser.name
       });
-      commit('setReconnect', false);
 
-      console.log(state.user);
-    } catch(error) {
-      handleError(commit, error)
+      const rooms = currentUser.rooms.map(room => ({
+        id: room.id,
+        name: room.name
+      }));
+      commit('setRooms', rooms);
+
+      const activeRoom = state.activeRoom || rooms[0];
+      commit('setActiveRoom', {
+        id: activeRoom.id,
+        name: activeRoom.name
+      });
+
+      await chatkit.subscribeToRoom(activeRoom.id);
+      return true;
+
+    } catch (error) {
+      handleError(commit, error);
     } finally {
       commit('setLoading', false);
     }
