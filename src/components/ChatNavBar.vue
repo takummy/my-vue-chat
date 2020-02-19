@@ -1,5 +1,5 @@
 <template>
-  <b-navbar id="chat-navbar togglable="md" type="dark variant="info">
+  <b-navbar id="chat-navbar" togglable="md" type="dark" variant="info">
     <b-navbar-brand href="#">
       びゅーちゃっと
     </b-navbar-brand>

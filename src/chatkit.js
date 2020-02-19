@@ -46,10 +46,10 @@ async function subscribeToRoom(roomId) {
         setMembers();
       },
       onUserStartedTyping: user => {
-        store.commit('setUserTyping', user.id)
+        store.commit('setUserTyping', user.id);
       },
       onUserStoppedTyping: () => {
-        store.commit('setUserTyping', null)
+        store.commit('setUserTyping', null);
       }
     }
   });
